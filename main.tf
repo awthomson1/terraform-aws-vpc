@@ -33,13 +33,13 @@ resource "aws_security_group" "vpc" {
     Name = "${var.vpc_name}-default-security-group"
   }
 }
+ 
+# output "vpc_id" {
+#   value = aws_vpc.main.id
+# }
 
-output "vpc_id" {
-  value = aws_vpc.main.id
-}
 
-
-output "private_subnet_ids" {
-  value = aws_subnet.private[*].id
-}
+# output "private_subnet_ids" {
+#   value = aws_subnet.private[*].id
+# }
 
